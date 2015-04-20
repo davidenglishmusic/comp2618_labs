@@ -13,7 +13,7 @@ Shape::~Shape()
   decrementObjectCount();
 }
 
-void Shape::setNoOfSides(unsigned int noOfSides)
+void Shape::setNoOfSides(const unsigned int &noOfSides)
 {
     if (noOfSides >= 0){
       this->mNoOfSides = noOfSides;

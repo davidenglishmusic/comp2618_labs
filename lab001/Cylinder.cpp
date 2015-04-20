@@ -1,14 +1,14 @@
 #include "Cylinder.h"
 #include <cmath>
 
-Cylinder::Cylinder(double radius, double height)
+Cylinder::Cylinder(const double &radius, const double &height)
 : Circle(radius)
 {
   Shape::setNoOfSides(3);
   setHeight(height);
 }
 
-void Cylinder::setHeight(double height)
+void Cylinder::setHeight(const double &height)
 {
   if(height > 0)
   {

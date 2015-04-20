@@ -1,14 +1,14 @@
 #include "Circle.h"
 #include <cmath>
 
-Circle::Circle(double radius)
+Circle::Circle(const double &radius)
 : Shape()
 {
   Shape::setNoOfSides(1);
   setRadius(radius);
 }
 
-void Circle::setRadius(double radius)
+void Circle::setRadius(const double &radius)
 {
   if (radius > 0){
     this->mRadius = radius;
